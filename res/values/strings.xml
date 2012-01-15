@@ -2,6 +2,6 @@
 <resources>
 
     <string name="hello">Hello World, OpenGLTestActivity!</string>
-    <string name="app_name">OpenGLTest</string>
+    <string name="app_name">OGLESCubeTestAPI</string>
 
 </resources>

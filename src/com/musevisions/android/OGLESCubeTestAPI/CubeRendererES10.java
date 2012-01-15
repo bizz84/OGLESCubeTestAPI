@@ -71,7 +71,7 @@ public class CubeRendererES10 implements CubeRenderer {
                  GL10.GL_FASTEST);
 
 
-         gl.glClearColor(1,1,1,1);
+         gl.glClearColor(0.8f,0.8f,0.8f,0.8f);
          gl.glEnable(GL10.GL_CULL_FACE);
          gl.glShadeModel(GL10.GL_SMOOTH);
          gl.glEnable(GL10.GL_DEPTH_TEST);
