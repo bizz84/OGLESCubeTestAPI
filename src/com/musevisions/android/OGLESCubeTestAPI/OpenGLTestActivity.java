@@ -23,20 +23,18 @@
  */
 package com.musevisions.android.OGLESCubeTestAPI;
 
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
+//import com.musevisions.android.OGLESCubeTestAPI.analytics.TrackedActivity;
+import com.google.android.apps.analytics.easytracking.*;
 
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.ConfigurationInfo;
-import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
-import android.view.Window;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.widget.Toast;
 
@@ -47,7 +45,9 @@ import android.widget.Toast;
  * Shows:
  * + How to redraw in response to user input.
  */
-public class OpenGLTestActivity extends Activity {
+// NOTE: TrackedActivity is part of the Google analytics EasyTracker library.
+// To run without tracking, simply replace TrackedActivity with Activity
+public class OpenGLTestActivity extends TrackedActivity {
 	
     protected static final String DEBUG_TAG = "Event";
 	

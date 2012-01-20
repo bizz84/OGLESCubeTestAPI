@@ -20,10 +20,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.IntBuffer;
 
-import javax.microedition.khronos.opengles.GL10;
-
 import android.opengl.GLES20;
-import android.util.Log;
 
 /**
  * A vertex shaded cube.

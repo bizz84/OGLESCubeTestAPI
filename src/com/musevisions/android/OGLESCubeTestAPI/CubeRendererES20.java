@@ -7,7 +7,6 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.util.Log;
 
-import com.musevisions.android.OGLESCubeTestAPI.GLMath;
 import com.musevisions.android.OGLESCubeTestAPI.GLUtils;
 import com.musevisions.android.OGLESCubeTestAPI.GLMath.mat4;
 

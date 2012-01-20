@@ -3,8 +3,6 @@ package com.musevisions.android.OGLESCubeTestAPI;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-import android.opengl.GLSurfaceView;
-
 /**
  * Render a cube.
  */

@@ -5,6 +5,9 @@
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="10" />
+    <!-- for Google Analytics -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:icon="@drawable/ic_launcher"
