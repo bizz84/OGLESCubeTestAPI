@@ -44,7 +44,7 @@ class CubeRendererES20 implements GLSurfaceView.Renderer, CubeRenderer {
     public CubeRendererES20() {
         mCube = new CubeES20();
         
-        Log.v(DEBUG_TAG, "->CubeRenderer");
+        //Log.v(DEBUG_TAG, "->CubeRenderer");
         
 
     }
@@ -115,7 +115,7 @@ class CubeRendererES20 implements GLSurfaceView.Renderer, CubeRenderer {
 
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
     	
-    	Log.v(DEBUG_TAG, "->onSurfaceCreated");
+    	//Log.v(DEBUG_TAG, "->onSurfaceCreated");
     	
     	int vertexShader = loadShader(GLES20.GL_VERTEX_SHADER, vertexShaderCode);
     	GLUtils.checkGLError("Vertex Shader");

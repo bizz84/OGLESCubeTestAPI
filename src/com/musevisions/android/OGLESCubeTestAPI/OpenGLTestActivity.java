@@ -60,7 +60,7 @@ public class OpenGLTestActivity extends TrackedActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.v(DEBUG_TAG, "->onCreate");
+        //Log.v(DEBUG_TAG, "->onCreate");
 
         boolean es20Supported = detectOpenGLES20(); 
         if (!es20Supported) {
@@ -126,7 +126,7 @@ class TouchSurfaceView extends GLSurfaceView {
     public TouchSurfaceView(Context context, boolean es20Supported, String titleES) {
         super(context);
         
-        Log.v(DEBUG_TAG, "->TouchSurfaceView");
+        //Log.v(DEBUG_TAG, "->TouchSurfaceView");
         
         owner = (Activity)context;
         mTitleES = titleES;
@@ -151,7 +151,7 @@ class TouchSurfaceView extends GLSurfaceView {
     		public boolean onScroll(MotionEvent e1, MotionEvent e2,
     		    float distanceX, float distanceY) {
 
-    			Log.v(DEBUG_TAG, "onScroll(" + distanceX + ", " + distanceY + ")"); 
+    			//Log.v(DEBUG_TAG, "onScroll(" + distanceX + ", " + distanceY + ")"); 
 	    		// beware, it can scroll to infinity
 	    		scrollBy((int)distanceX, (int)distanceY);
 	    		return true;
@@ -160,7 +160,7 @@ class TouchSurfaceView extends GLSurfaceView {
     		@Override
     		public boolean onFling(MotionEvent e1, MotionEvent e2, float vX, float vY) {
     			
-    			Log.v(DEBUG_TAG, "onFling(" + vX + ", " + vY + ")"); 
+    			//Log.v(DEBUG_TAG, "onFling(" + vX + ", " + vY + ")"); 
 
     			fling(vX, vY);
     			
@@ -237,7 +237,7 @@ class TouchSurfaceView extends GLSurfaceView {
 		    float yAcc = -mVelY * (float)(curTime - mPrevTime) / 1.0E9f;
 		    
 
-			Log.v(DEBUG_TAG, "Step [xV: " + mVelX + ", yV: " + mVelY + ", xAcc: " + xAcc + ", yAcc: " + yAcc + "]");
+			//Log.v(DEBUG_TAG, "Step [xV: " + mVelX + ", yV: " + mVelY + ", xAcc: " + xAcc + ", yAcc: " + yAcc + "]");
 		    
 		    mVelX = updateSpeed(mVelX, xAcc);
 		    mVelY = updateSpeed(mVelY, yAcc);
